@@ -1,23 +1,10 @@
 import { Component } from '@angular/core';
-import { Usuario } from '../shared/model/usuario';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  titulo = 'Social IFPB';
-  usuario: Usuario;
-  usuarios: Array<Usuario>;
-  aluno = 'Luís Henrique Ferreira Freire (20201370005)';
-  constructor() {
-    this.usuario = new Usuario();
-    this.usuarios = new Array<Usuario>();
-  }
-
-  inserirUsuario(): void {
-    this.usuarios.push(this.usuario);
-    this.usuario = new Usuario();
-  }
+  title = 'Luís Henrique Ferreira Freire';
 }
